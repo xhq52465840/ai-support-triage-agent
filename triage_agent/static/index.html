@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TriageAI — Support Inbox Agent</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="logo">⚡</div><div><b>TriageAI</b><span>Support inbox agent · LangGraph</span></div></div>
+  <div class="actions">
+    <span id="mode" class="pill"></span>
+    <button id="compose" class="ghost">+ Simulate email</button>
+    <a class="ghost" href="/api/export.csv">Export CSV</a>
+    <button id="run" class="primary">Run agent on inbox</button>
+  </div>
+</header>
+
+<section class="stats" id="stats"></section>
+
+<main class="grid">
+  <section class="list">
+    <div class="filters" id="filters"></div>
+    <table>
+      <thead><tr><th>Ticket</th><th>Priority</th><th>Category</th><th>Sentiment</th><th>Status</th><th>Assignee</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="6" class="empty">Inbox not processed yet — click <b>Run agent on inbox</b>.</td></tr></tbody>
+    </table>
+  </section>
+  <aside class="detail" id="detail"><div class="empty">Select a ticket to see the agent's reasoning, extracted fields and draft reply.</div></aside>
+</main>
+
+<dialog id="dlg">
+  <form method="dialog" id="dlgForm">
+    <h3>Simulate an incoming email</h3>
+    <label>From<input name="sender" value="Alex Rivera <alex@contoso.com>" /></label>
+    <label>Subject<input name="subject" value="Refund for annual plan" /></label>
+    <label>Body<textarea name="body" rows="5">Hi, I upgraded to the annual Pro plan by mistake yesterday and was charged $480.00 (order ORD-90311). Can I get a refund? Thanks!</textarea></label>
+    <div class="row"><button value="cancel" class="ghost">Cancel</button><button id="send" value="default" class="primary">Triage it</button></div>
+  </form>
+</dialog>
+<script src="/static/app.js"></script>
+</body>
+</html>

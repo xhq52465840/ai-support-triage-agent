@@ -1,0 +1,9 @@
+[
+  {"title": "How refunds and duplicate charges work", "url": "https://help.acme.example/billing/refunds", "keywords": ["billing", "refund", "charged", "twice", "duplicate", "payment"]},
+  {"title": "Download invoices and add a VAT number", "url": "https://help.acme.example/billing/invoices", "keywords": ["billing", "invoice", "vat", "finance"]},
+  {"title": "Track your shipment", "url": "https://help.acme.example/shipping/tracking", "keywords": ["shipping", "package", "tracking", "delivery", "arrived"]},
+  {"title": "Recover access when you lose your 2FA device", "url": "https://help.acme.example/account/2fa-recovery", "keywords": ["account", "2fa", "locked", "login", "phone"]},
+  {"title": "Known issues in the latest iOS release", "url": "https://help.acme.example/status/ios-known-issues", "keywords": ["bug", "ios", "crash", "crashes", "export"]},
+  {"title": "Integrations: Slack, Teams and webhooks", "url": "https://help.acme.example/integrations", "keywords": ["feature_request", "slack", "integration", "webhook"]},
+  {"title": "System status and incident updates", "url": "https://status.acme.example", "keywords": ["bug", "down", "outage", "dashboard", "500"]}
+]
